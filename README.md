@@ -27,8 +27,8 @@ and stored in data structures,
 ```bash
 data Expression a = Func (a -> a -> a) 
 
-Sum_two' :: Num a => Expression a
-Sum_two' = Func(\x y -> x + y)
+sum_two' :: Num a => Expression a
+sum_two' = Func(\x y -> x + y)
 ```
 showing that the sum expression is a first class value.
 (please refer to **Sum.hs** for code)
