@@ -278,11 +278,11 @@ In a more syntactical approach
 
 True False True
 
-->  (λx. λy. x) False True, [defn of True]
+$\to$  (λx. λy. x) False True, [defn of True]
 
--> beta (λy. False) True 
+$\to_{\beta}$ (λy. False) True 
 
--> beta False 
+$\to_{\beta}$ False 
 
 Additionally, if our boolean expression is false, applying beta sub will give true (as true always outputs the second argument). 
 In a more syntactical approach
@@ -327,3 +327,32 @@ Thus we can formally define or as
 
 `Or: λp. λq. p True q`
 
+Lets verify with two sets of boolean values {p is true, q is false} and {p is false, q is false}. I’ll leave the other two sets  {p is true, q is true} and {p is false, q is true} as an exercise.
+
+Lets verify {p is true, q is false} (We expect to have a result of True)
+
+(λp. λq. p True q) True False
+
+$\to_{\beta}$ (λq. True True q) False        
+
+$\to_{\beta}$ True True False                
+
+$\to$ (λx. λy. x) True False         [defn of True]
+
+$\to_{\beta}$ (λy. True) False          
+
+$\to_{\beta}$ True                      
+
+Lets verify {p is false, q is false}
+
+(λp. λq. p True q) False False
+
+$\to_{\beta}$ (λq. False True q) False       
+
+$\to_{\beta}$ False True False                
+
+$\to$ (λx. λy. y) True False               [defn of False]
+
+$\to_{\beta}$ (λy. y) False                
+
+-> beta False                          
