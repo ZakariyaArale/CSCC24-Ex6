@@ -1,28 +1,27 @@
 # Untyped Lambda Calculus
 
 ## Introduction
-In CSCC24, one of the main concepts that we’ve learned and used throughout the various programming languages (Racket, Java, Haskell, etc.) was lambda expression, functions (without a name) that specify the operation given a set of input values (Douglas C. Schmidt, 2020). They are treated as first class values meaning they can be passed as arguments, be returned as a result, and stored in data structures (Douglas C. Schmidt, 2020).
+In CSCC24, one of the main concepts that we’ve learned and used throughout the various programming languages (Racket, Java, Haskell, etc.) was lambda expression, functions (without a name) that specify the operation given a set of input values. They are treated as first class values meaning they can be passed as arguments, be returned as a result, and stored in data structures.
 
 For instance if we consider the expression 
 
-\x y -> x + y // An expression that take two values and return the sum
+\x y -> x + y 
 
-This is a lambda expression. The expression doesn’t have a concrete name (like add_two_num), and it specifies that it is adding two values.
+This is an function that take two values and return the sum.
 
+This is also a lambda expression. The expression doesn’t have a concrete name (like add_two_num), and it specifies that it is adding two values.
 
 Additionally we can pass is as argument of functions such as in foldr
-
 
 sumList = foldr \x y -> x + y 0 
 
 Returned as a a result
 
-bash ''' Sum_two = \x y -> x  + y '''
+Sum_two = \x y -> x  + y 
 
 And stored in data structure 
 
 data Expression  = Func (a -> a -> a)
-
 
 However a function 
 
