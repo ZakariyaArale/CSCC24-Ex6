@@ -196,7 +196,7 @@ Three
 
 ...
 
-This numbering system of using the number of function applications to denote numerical values is called Church Numerals.
+This numbering system of using the number of compositions of `f` to denote numerical values is called Church Numerals.
 
 
 
