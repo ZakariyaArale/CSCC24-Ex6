@@ -193,6 +193,7 @@ Two
 
 Three
 λf. λx. f (f (f x))
+
 This numbering system of using the number of function applications to denote numerical values is called Church Numerals.
 
 
