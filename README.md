@@ -204,6 +204,25 @@ This gives the lambda expression `Add_Nat : λa. λb. λf. λx. a f (b f x)`
 
 Let's test Add_Nat with inputs 0 and 0, we should expect 0 (note for simplicity, as there’s a lot of lambda expressions in this chain of substitutions, we'll use `0` as a placeholder `λf. λx. x`  and reapply the definition when necessary, this is done for readability purposes only, **we will be doing this a lot in this section of the lecture**).
 
+((λa. λb. λf. λx. a f (b f x)) 0 0)
+
+$\to_{\beta}$  ((λb. λf. λx. 0 f (b f x)) 0)        [0 / a]
+
+$\to_{\beta}$   (λf. λx. 0 f (0 f x))            [0 / b]
+
+$\to$ (λf. λx. (λf. λx. x) f (0 f x)) [defn of  0]
+
+$\to_{\beta}$  (λf. λx. (λx. x) (0 f x))        [f / f]
+
+$\to_{\beta}$   (λf. λx. 0 f x) [(0 f x) / x]
+
+$\to$  (λf. λx. (λf. λx. x) f x) [defn 0]
+
+$\to_{\beta}$  (λf. λx. (λx. x) x)  [f / f]
+
+$\to_{\beta}$  (λf. λx. x),  [x / x]
+
+$\to$  0 [defn 0] , as wanted
 
 
 
