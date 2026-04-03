@@ -9,32 +9,35 @@ For instance if we consider the expression
 ```
 This is an function that take two values and return the sum. This is also a lambda expression, the expression doesn’t have a concrete name (like add_two_num) while specifying the arithmetic operation being applied to two inputted values.
 
-Additionally we can pass is as argument of functions such as in foldr,
+Additionally we can pass is as an argument for functions such as in foldr,
 ```bash
+sumList :: Num a => [a] -> a
 sumList = foldr \x y -> x + y 0 
 ```
-returned as a a result,
+returned as a result,
 ```bash
-Sum_two = \x y -> x  + y
+Sum_two : Num a => a -> a -> a 
+Sum_two = \() -> \x y -> x + y
 ```
+(Sum_two is the result of the lambda expression that takes in no arguments and return our original lmanda expression)
 and stored in data structures,
-
+```bash
 data Expression a = Func (a -> a -> a) 
 
 Sum_two' :: Num a => Expression a
 Sum_two' = Func(\x y -> x  + y)
-
+```
 (please refer to **Sum.hs** for code)
-
 showing that the lambda expression is a first class value.
 
 
-However a function 
-
+However functions that provide a name for its computation such as 
+```bash
 def sum_two(x, y):
     return x + y
-
-Isn't a lambda expression as we are providing a name to the sum_two function via def.
+```
+in Python isn't a lambda expression as we are providing a name to the sum_two function via def.
+(please refer to **Sum.py** for code)
 
 While lambda expressions were an enjoyable topic to learn about, allowing us to express complex algorithms in just a few lines of code (such as in Lab 3, where we computed the transpose of a matrix in a single line, or used function composition to optimize stack space in CPS lecuture), if you’re like me, you may have noticed that we never developed a fully formal understanding of what really is Lambda Calculus. If I were to ask a C24 student what lambda calculus is, they might say something like “it’s a terminology that describes lambda expressions.” While lambda expressions are an important part of lambda calculus, as we will see in this lecture, this explanation only gives a “loose” view of the subject.
 
