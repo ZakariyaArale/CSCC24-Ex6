@@ -356,3 +356,21 @@ $\to$ (λx. λy. y) True False               [defn of False]
 $\to_{\beta}$ (λy. y) False                
 
 $\to_{\beta}$ False                          
+
+Note that in CSCB36, one of the big results (no pun intended) is that the set {not, or} is complete in Boolean algebra. In other words, since we’ve defined the not operator and the or operator as equivalent lambda expressions, we can represent any Boolean expression as an equivalent lambda calculus expression using combinations of not and or.
+
+## Conclusion 
+To wrap up this lecture on Lambda Calculus, I want to conclude this lecture by talking about the importance of Lambda Calculus for CS students. While this lecture focuses on what lambda calculus is, it is equally important to understand why you should learn lambda calculus.
+
+Let’s recall the Church-Turing thesis, the thesis proposed that every single function that performs some form of computation has an equivalent representation as a lambda expression. In this course, when we covered the proof of program correctness lesson, one of the main things we’ve highlighted is that functional programs are easy to do proofs with as we can easily derive “facts” based on the input we give and we don't have to worry about imperative concepts such as modification of the program state which made proving correctness slightly more tricker, as you have seen in CSCB36.
+
+While the thesis isn't a theorem, it motivates the idea that we can represent any algorithm to an equivalent lambda expression representation. This gives us a clean and mathematically structured framework for analyzing programs and proving their correctness. In the various examples we’ve covered in proving correctness of our lambda expressions, most of our proof were about a quarter of a page (if you remove the spacing), yet they captured full reasoning in a very simple and consise way. This motivates the fact that lambda calculus provides an easier way of analysing programs by capturing our reasoning in a formal structure while being relatively short and easy to follow.
+
+Proving program correctness is an important part of your development as an up and coming computer scientist and SWE. Why?  I end off with a (paraphased) quote from Nick Cheng.
+
+The reason we do we learn how to prove algorithms as CS students is for two main reasons
+- You’ll improve your algorithm maturity, having a throughout understanding of the algorithm   
+- Later down the row, when you become amazing SWE (and you will) and you create amazing new algorithms, you’ll have a valuable tool in your toolkit to justify why your algorithm works as intended. (Nick Cheng, 2025)
+
+With the addition of Lambda Calculus in your toolkit, you are one step closure in revolutionizing the field of tech :)!
+
