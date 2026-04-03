@@ -47,3 +47,18 @@ Similar to how we learn a new programming language in this course, we will first
 (**Side Note: When talking about Lambda Calculus I'll implictly be refering to Untyped Lambda Calculus**)
 
 ## What is Lambda Calculus?
+Before we can define what lambda calculus really is, we’ll start by defining the basic terminology used in Lambda Calculus
+
+We’ll begin by defining what an expression is in Lambda Calculus.
+
+Let E be the set of expressions [We’ll define this set using structural induction, we all can benefit with some practice with structural induction ;) ]:
+
+Base Case: 
+    Variables: If x is a variable then x is in E
+Induction Step:
+    Abstraction: If x is a variable and e is in E then \lambda x.e is an expression 
+    Application: If e1, e2 is in E then (e1 e2) is in E 
+
+
+Let's start with defining what a variable is. 
+
