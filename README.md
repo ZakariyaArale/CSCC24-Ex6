@@ -72,3 +72,26 @@ For instance if I have the symbol x, without any “context” we don’t know w
 
 On the flip side, constants like the integer `1` or the string `“hello world”` aren't variables. The value of both constants is fixed and can’t be changed. 
 
+## Abstractions
+An abstraction represents a function in Lambda Calculus
+
+Recall from MATA31, a function defines a mapping from a set of input values to the set of output values where each input value maps to exactly one output value.
+
+For example, the relation `f(x) = x^5 + 1` where `f : ℝ → ℝ` is a function, it maps an arbitrary real number x to only x^5 + 1. 
+However, the relation g(x) = +/- sqrt(x)  where g: R >=0 -> R isn’t a function. If I consider the value x = 1, g(1) maps to both -1 and 1 (not all elements in the domain map to a unique element of the codomain). 
+
+An abstraction consists of 4 components: 
+A lambda symbol to represent that the expression is a function
+An input variable
+An output expression
+A dot to separate the input variable and the output expression (it represent equality of the function to the output expression)
+Symbolically abstractions are of the form
+\lambda x . e where x is a variable and e is an expression
+
+For instance, if we consider \lambda x . x, it is a function as it maps the value (the x is a placeholder of) to itself. Additionally the function is of the form \lambda x . e. Therefore, \lambda x . x is an expression more specifically its an abstraction.
+
+This function should look very familiar. Beside the difference in syntax, this is exactly how we’ve defined the identity function in Racket in the CPS lecture.
+
+However, if we consider \lambda x . 1, while the statement represents a function as it maps the value (the x is a placeholder of) to the constant value 1, the constant 1 isn’t a valid expression (note that constants aren’t defined in the definition of expressions). Thus the function  \lambda x . 1 isn’t an expression.
+
+
