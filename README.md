@@ -373,3 +373,6 @@ Proving program correctness is an important part of your development as an up an
 - Later down the row, when you become amazing SWE (and you will) and you create amazing new algorithms, you’ll have a valuable tool in your toolkit to justify why your algorithm works as intended." (Nick Cheng, 2025)
 
 With the addition of Lambda Calculus in your toolkit, you are one step closure in revolutionizing the field of tech :)!
+
+## Resources
+
