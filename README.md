@@ -300,3 +300,30 @@ Using this relationship of passing False and True as arguments to a boolean lamb
 
 `Not: λb. b False True`
 
+Now lets move to a more challenging boolean operator: or
+
+We want a boolean expression that outputs true if any of the lambda expressions we give to the lambda function is True, otherwise we should output false.
+To do this, we’ll take interspiration from short circuit evaluation of the or operator in python. 
+
+Recall that if the first argument is True, True is automatically returned, regardless of what the second argument evaluates to.
+This is why 
+
+```bash
+true or 1 / 0 == 0
+```
+evalues to true, instead of raising a ZeroDivision Exception
+(Python is basically saying “I’ve found a True, anything or to True must evaluate to truth so I’m going to stop evaluating the rest of the expression”)
+
+However, if the first argument is false, then we evaluate the next argument and its truth value.
+This is why 
+```bash
+true or 1 / 0 == 0
+```
+raises a ZeroDivision Exception.
+(Python is basically saying “I’ve found a False, the truth value of the boolean expression solely depends on the truth value of the second argument, I’m going to start evaluating the next expression”)
+
+So we need two lambda expressions, say p and q, we’ll pass the expression p with arguments True and q. If p is true then we automatically output the first argument which is True. If p is false we output whatever the truth value of q is (see how it's really similar to short circuit evaluation).
+Thus we can formally define or as 
+
+`Or: λp. λq. p True q`
+
