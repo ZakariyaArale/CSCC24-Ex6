@@ -202,6 +202,8 @@ Using this model for representing numerical values, writing a lambda expression 
 
 This gives the lambda expression `Add_Nat : λa. λb. λf. λx. a f (b f x)`
 
+Let's test Add_Nat with inputs 0 and 0, we should expect 0 (note for simplicity, as there’s a lot of lambda expressions in this chain of substitutions, we'll use `0` as a placeholder `λf. λx. x`  and reapply the definition when necessary, this is done for readability purposes only, **we will be doing this a lot in this section of the lecture**).
+
 
 
 
