@@ -63,3 +63,12 @@ Induction Step:
 Let's start with defining what a variable is. 
 
 ### Variables
+
+A variable is a symbol that is a placeholder for some arbitrary value.
+
+For instance if I have the symbol x, without any “context” we don’t know what x represents. If we give x more “context”, we can replace the symbol with the given “context”.
+
+(You may have noticed that I put quotes on the word context, we’ll talk about what “context” means in Lambda Calculus shortly)
+
+On the flip side, constants like the integer `1` or the string `“hello world”` aren't variables. The value of both constants is fixed and can’t be changed. 
+
