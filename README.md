@@ -78,7 +78,7 @@ An abstraction represents a function in Lambda Calculus
 Recall from MATA31, a function defines a mapping from a set of input values to the set of output values where each input value maps to exactly one output value.
 
 For example, the relation $f(x) = x^5 + 1$ where $f : \mathbb{R} \to \mathbb{R}$ is a function, it maps an arbitrary real number $x$ to only $x^5 + 1$. 
-However, the relation $g(x) = \pm \sqrt{x}$  where g: R >=0 -> R isn’t a function. If I consider the value x = 1, g(1) maps to both -1 and 1 (not all elements in the domain map to a unique element of the codomain). 
+However, the relation $g(x) = \pm \sqrt{x}$  where $g : \mathbb{R}_{\ge 0} \to \mathbb{R}$ isn’t a function. If I consider the value $x = 1$, $g(1)$ maps to both $-1$ and $1$ (not all elements in the domain map to a unique element of the codomain). 
 
 An abstraction consists of 4 components: 
 A lambda symbol to represent that the expression is a function
