@@ -298,5 +298,5 @@ $\to_{\beta}$ True
 
 Using this relationship of passing False and True as arguments to a boolean lambda expression can be formally defined as …
 
-`Not: λf. f False True`
+`Not: λb. b False True`
 
