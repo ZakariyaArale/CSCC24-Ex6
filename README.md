@@ -376,3 +376,4 @@ With the addition of Lambda Calculus in your toolkit, you are one step closure i
 
 ## Resources
 
+[Programming with Math | The Lambda Calculus (Eyesomorphic)](url https://www.youtube.com/watch?v=ViPNHMSUcog)
