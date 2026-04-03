@@ -13,13 +13,21 @@ Additionally we can pass is as argument of functions such as in foldr,
 ```bash
 sumList = foldr \x y -> x + y 0 
 ```
-returned as a a result
+returned as a a result,
 ```bash
 Sum_two = \x y -> x  + y
 ```
-And stored in data structure 
+and stored in data structures,
 
-data Expression  = Func (a -> a -> a) (please refer to **Sum.hs** for code)
+data Expression a = Func (a -> a -> a) 
+
+Sum_two' :: Num a => Expression a
+Sum_two' = Func(\x y -> x  + y)
+
+(please refer to **Sum.hs** for code)
+
+showing that the lambda expression is a first class value.
+
 
 However a function 
 
