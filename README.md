@@ -54,10 +54,10 @@ We’ll begin by defining what a lambda expression is in Lambda Calculus.
 Let `E` be the set of lambda expressions [We’ll define this set using structural induction, we all can benefit with some practice with structural induction :) ]:
 
 Base Case:  
-- Variables: If x is a variable then `x ∈ E`
+- Variables: If `x` is a variable then `x ∈ E`
 
 Induction Step:
-- Abstraction: If x is a variable and `x ∈ E` then `λx.e ∈ E`
+- Abstraction: If `x` is a variable and `e ∈ E` then `λx.e ∈ E`
 - Application: If `e1 ∈ E`, `e2 ∈ E` then `(e1 e2) ∈ E` 
 
 Let's start with defining what a variable is. 
