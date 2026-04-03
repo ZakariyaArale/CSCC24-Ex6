@@ -99,6 +99,31 @@ As a refresher this is the identity function in Racket
 (identity' 9)
 (identity' '(C . 24))
 ```
-However, if we consider \lambda x . 1, while the statement represents a function as it maps the value (the x is a placeholder of) to the constant value 1, the constant 1 isn’t a valid expression (note that constants aren’t defined in the definition of expressions). Thus the function  \lambda x . 1 isn’t an expression.
+(please refer to **identity.rk** for code)
+
+However, if we consider `λx.1`, while the statement represents a function as it maps the value (the x is a placeholder of) to the constant value 1, the constant 1 isn’t a valid expression (note that constants aren’t defined in the definition of expressions). Thus the function `λx.1` isn’t an expression. This is interesting as we can do this for lambda expression we've learned in this course. As an example in Rxcket we can do
+```bash
+(define identity' (λ (x) 1))
+
+;In each example, the return value is 1
+(identity' 9)
+(identity' '(C . 24))
+```
+(please refer to **one.rk** for code)
+This should highlight the fact that Lambda Calculus isn't just the lambda expression we've experience with in this course. 
+
+### Applications
+An application represents the process of providing an argument to an expression.
+
+This is “similar-ish” to function application in Racket (as you have seen in the previous examples), where we pass arguments to a function by placing them inside parentheses after the function name.
+
+For instance if I have the statement  `(λx.x) y`, as `λx.x` is an expression (application) and `y` is an expression (variable). Thus the statement `(λx.x) y` is an expression, more specifically it’s an application.
+
+The expression translates to “for the function `λx.x`, provide the function with the argument `y`”.
+
+However, `(λx.x) “hello world”` isn't a valid expression. As discussed previously, constants aren’t allowed in expressions (which is why I emphasise “similar-ish” when discussing function application in Racket, in Racket we can pass constants as arguments to a function). Again, this should highlight the fact that Lambda Calculus isn't just the lambda expression we've experience with in this course. 
+
+
+
 
 
