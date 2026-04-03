@@ -275,17 +275,26 @@ Now that we have formally defined True and False in lambda calculus, let’s tac
 Intuitively, we want to invert a truth value. In other words, we want to flip whatever Boolean value we are given (ie. true becomes false and false becomes true). What we could do is pass false and true (lambda expression) to some truth value where the first argument is false and the second argument is true. Intuitively this should make sense, if our boolean expression is true, applying beta sub will give false (as true always outputs the first argument). 
 
 In a more syntactical approach
+
 True False True
+
 ->  (λx. λy. x) False True, [defn of True]
+
 -> beta (λy. False) True 
+
 -> beta False 
 
 Additionally, if our boolean expression is false, applying beta sub will give true (as true always outputs the second argument). 
 In a more syntactical approach
+
 False False True
+
 $\to$  (λx. λy. y) False True, [defn of False]
+
 $\to_{\beta}$ (λy. y) True 
+
 $\to_{\beta}$ True 
+
 
 
 
