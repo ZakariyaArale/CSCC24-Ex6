@@ -130,7 +130,7 @@ For instance if I have the expression `(λx.x) y`, applying beta reduction gives
 
 We typically denote beta-reduction using an arrow labeled with `β` ($\to_{\beta}$):
 
-Additionally, performing beta reduction, the following notation is sometimes used to denote subtituion,  e[y/x]. This translates to "given the output expression e, return the expression e by replace every instance of x with y". 
+Additionally, performing beta reduction, the following notation is sometimes used to denote subtituion,  `e[y/x]`. This translates to "given the output expression e, return the expression e by replace every instance of x with y". 
 
 Before we move to examples of beta reduction, I would like to brush-up on what is a free variable and what's a bound variable in Lambda Calculus (you should be really familar with it by now from the closure and type inference lessons but we'll define it using Lambda Calculus syntax).
 
