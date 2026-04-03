@@ -16,8 +16,11 @@ sumList = foldr \x y -> x + y 0
 ```
 returned as a result,
 ```bash
-Sum_two : Num a => a -> a -> a 
-Sum_two = \() -> \x y -> x + y
+sum_two_helper : b -> Num a => a -> a -> a
+sum_two_helper = \b -> \x y -> x + y
+
+sum_two : Num a => a -> a -> a
+sum_two = sum_two_helper "hello world"
 ```
 (Sum_two is the result of the lambda expression that takes in no arguments and return our original lambda expression)
 and stored in data structures,
