@@ -88,10 +88,17 @@ An abstraction consists of 4 components:
 Symbolically abstractions are of the form
 - `λx.e` where `x` is a variable and `e` is an expression
 
-For instance, if we consider \lambda x . x, it is a function as it maps the value (the x is a placeholder of) to itself. Additionally the function is of the form \lambda x . e. Therefore, \lambda x . x is an expression more specifically its an abstraction.
+For instance, if we consider `λx.x`, it is a function as it maps the value (the x is a placeholder of) to itself. Additionally the function is of the form `λx.e`. Therefore, `λx.x` is an expression more specifically its an abstraction.
 
 This function should look very familiar. Beside the difference in syntax, this is exactly how we’ve defined the identity function in Racket in the CPS lecture.
+As a refresher this is the identity function in Racket
+```bash
+(define identity' (λ (x) (x)))
 
+;In each example, the return value is the inputted value
+(identity' 9)
+(identity' '(C . 24))
+```
 However, if we consider \lambda x . 1, while the statement represents a function as it maps the value (the x is a placeholder of) to the constant value 1, the constant 1 isn’t a valid expression (note that constants aren’t defined in the definition of expressions). Thus the function  \lambda x . 1 isn’t an expression.
 
 
