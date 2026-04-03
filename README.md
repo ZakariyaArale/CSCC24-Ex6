@@ -166,7 +166,33 @@ To motivate the Church-Turing thesis let’s tackle a challenge that you’ve no
 
 ## Basic Algorithms in Lambda Calculus
 
+Let’s consider one of the simplest binary operations we first learn in Racket and Haskell: addition. For simplicity, we will work with the natural numbers.
+In order to define natural number addition, we first need a number system that uses only functions. To do this, we take inspiration from Lab 9, where we did not (yet) have access to arithmetic operations in Prolog and instead represented numbers using the number of function composition applied to a term.
+Recall that we represented natural numbers as
 
+```bash
+% zero
+s(zero)
+
+% one
+s(s(zero))
+
+% two
+s(s(s(zero)))
+```
+Using the definition of a lambda expression, this simply translates to the number of applications of f to a variable x, in other words …
+Zero
+λf. λx. x
+
+One
+λf. λx. f x
+
+Two
+λf. λx. f (f x)
+
+Three
+λf. λx. f (f (f x))
+This numbering system of using the number of function applications to denote numerical values is called Church Numerals.
 
 
 
