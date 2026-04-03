@@ -368,9 +368,8 @@ While the thesis isn't a theorem, it motivates the idea that we can represent an
 
 Proving program correctness is an important part of your development as an up and coming computer scientist and SWE. Why?  I end off with a (paraphased) quote from Nick Cheng.
 
-The reason we do we learn how to prove algorithms as CS students is for two main reasons
+"The reason we do we learn how to prove algorithms as CS students is for two main reasons
 - You’ll improve your algorithm maturity, having a throughout understanding of the algorithm   
-- Later down the row, when you become amazing SWE (and you will) and you create amazing new algorithms, you’ll have a valuable tool in your toolkit to justify why your algorithm works as intended. (Nick Cheng, 2025)
+- Later down the row, when you become amazing SWE (and you will) and you create amazing new algorithms, you’ll have a valuable tool in your toolkit to justify why your algorithm works as intended." (Nick Cheng, 2025)
 
 With the addition of Lambda Calculus in your toolkit, you are one step closure in revolutionizing the field of tech :)!
-
