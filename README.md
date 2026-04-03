@@ -30,8 +30,8 @@ data Expression a = Func (a -> a -> a)
 Sum_two' :: Num a => Expression a
 Sum_two' = Func(\x y -> x  + y)
 ```
-(please refer to **Sum.hs** for code)
 showing that the lambda expression is a first class value.
+(please refer to **Sum.hs** for code)
 
 
 However functions that provide a name for its computation such as 
