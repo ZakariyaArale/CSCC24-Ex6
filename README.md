@@ -162,7 +162,9 @@ Lambda calculus is a programming language (developed by Alonzo Church in 1936) t
 
 To motivate the Church-Turing thesis let’s tackle a challenge that you’ve noticed in the language, the lack of constants (ie. integers, strings, …).
 
-## Fun with Lambda Expressions
+## Bridging Coding and Lambda Calculus
+
+
 
 
 
