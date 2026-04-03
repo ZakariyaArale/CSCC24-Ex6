@@ -51,7 +51,7 @@ Before we can define what lambda calculus really is, we’ll start by defining t
 
 We’ll begin by defining what an expression is in Lambda Calculus.
 
-Let E be the set of expressions (We’ll define this set using structural induction, we all can benefit with some practice with structural induction ;) ):
+Let E be the set of expressions (We’ll define this set using structural induction, we all can benefit with some practice with structural induction :) ):
 
 Base Case: 
     Variables: If x is a variable then x is in E
