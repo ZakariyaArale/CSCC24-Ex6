@@ -62,3 +62,4 @@ Induction Step:
 
 Let's start with defining what a variable is. 
 
+### Variables
