@@ -206,21 +206,27 @@ Let's test Add_Nat with inputs 0 and 0, we should expect 0 (note for simplicity,
 
 ((λa. λb. λf. λx. a f (b f x)) 0 0)
 
-$\to_{\beta}$  ((λb. λf. λx. 0 f (b f x)) 0)          **((λa. λb. λf. λx. a f (b f x)) 0 0) [0 / a]**
+$\to_{\beta}$  ((λb. λf. λx. 0 f (b f x)) 0)          
+**((λa. λb. λf. λx. a f (b f x)) 0 0) [0 / a]**
 
-$\to_{\beta}$   (λf. λx. 0 f (0 f x))             **((λb. λf. λx. 0 f (b f x)) 0)   [0 / b]**
+$\to_{\beta}$   (λf. λx. 0 f (0 f x))            
+**((λb. λf. λx. 0 f (b f x)) 0)   [0 / b]**
 
 $\to$ (λf. λx. (λf. λx. x) f (0 f x)) [defn of  0]  
 
-$\to_{\beta}$  (λf. λx. (λx. x) (0 f x))       **(λf. λx. (λf. λx. x) f (0 f x)) [f / f]**
+$\to_{\beta}$  (λf. λx. (λx. x) (0 f x))       
+**(λf. λx. (λf. λx. x) f (0 f x)) [f / f]**
 
-$\to_{\beta}$   (λf. λx. 0 f x)                **(λf. λx. (λx. x) (0 f x))  [(0 f x) / x]**
+$\to_{\beta}$   (λf. λx. 0 f x)               
+**(λf. λx. (λx. x) (0 f x))  [(0 f x) / x]**
 
 $\to$  (λf. λx. (λf. λx. x) f x) [defn 0]
 
-$\to_{\beta}$  (λf. λx. (λx. x) x)    **(λf. λx. (λf. λx. x) f x) [f / f]** 
+$\to_{\beta}$  (λf. λx. (λx. x) x)    
+**(λf. λx. (λf. λx. x) f x) [f / f]** 
 
-$\to_{\beta}$  (λf. λx. x),   **λf. λx. (λx. x) x) [x / x]**
+$\to_{\beta}$  (λf. λx. x),   
+**λf. λx. (λx. x) x) [x / x]**
 
 $\to$  0 [defn 0] , as wanted
 
