@@ -124,13 +124,13 @@ The expression translates to “for the function `λx.x`, provide the function w
 However, `(λx.x) “hello world”` isn't a valid expression. As discussed previously, constants aren’t allowed in expressions (which is why I emphasise “similar-ish” when discussing function application in Racket, in Racket we can pass constants as arguments to a function). Again, this should highlight the fact that Lambda Calculus isn't just the lambda expression we've experience with in this course. 
 
 ### Beta Reduction
-In order to use or evaluate and application (ie. function application), it is done through a  process called Beta Reduction. Similar to function application in Racket, beta-reduction works by replacing every occurrence of the bound variable in the function body with the given argument, and then returning the resulting expression.
+In order to evaluate and application (in other words function application), it is done through a  process called Beta Reduction. Similar to function application in Racket, beta-reduction works by replacing every occurrence of the bound variable in the function body with the given argument, and then returning the resulting expression (output).
 
-For instance if I have the expression (\lambda x. x) y, applying beta reduction gives us the result y. We provide y as an argument to the function (\lambda x. x), replace each instance of x with y and return the body of the expression.
+For instance if I have the expression `(λx.x) y`, applying beta reduction gives us the result `y`. We provide `y` as an argument to the function `(λx.x)`, replace each instance of `x` with `y`, and finally return the output of the expression.
 
-We typically denote beta-reduction using an arrow labeled with β:
+We typically denote beta-reduction using an arrow labeled with `β` ($\to_{\beta}$):
 
-Additionally when performing a substitution we use the follow notation to note we’re replacing variable x with expression e x [e/x] (this is called  Barendregt’s variables convention)
+Additionally when performing beta-reduction we use the follow notation to note we’re replacing variable x with expression e x [e/x].
 
 
 
