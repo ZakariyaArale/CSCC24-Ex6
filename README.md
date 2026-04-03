@@ -55,6 +55,7 @@ Let E be the set of expressions [We’ll define this set using structural induct
 
 Base Case:  
 - Variables: If x is a variable then `x ∈ E`
+
 Induction Step:
 - Abstraction: If x is a variable and `x ∈ E` then `λx.e ∈ E`
 - Application: If `e1 ∈ E`, `e2 ∈ E` then `(e1 e2) ∈ E` 
