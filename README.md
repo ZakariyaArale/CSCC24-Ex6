@@ -17,7 +17,7 @@ sumList = foldr \x y -> x + y 0
 
 Returned as a a result
 
-Sum_two = \x y -> x  + y
+bash ''' Sum_two = \x y -> x  + y '''
 
 And stored in data structure 
 
