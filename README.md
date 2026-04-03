@@ -376,9 +376,15 @@ With the addition of Lambda Calculus in your toolkit, you are one step closure i
 
 ## Resources
 [The Lambda Calculus (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/lambda-calculus/)
+
 [Overview of Java Lambda Expressions(Prof. Douglas C. Schmidt, Vanderbilt University )](https://www.dre.vanderbilt.edu/~schmidt/cs253/2020-PDFs/3.2.1-Java-lambda-expressions.pdf)
+
 [Lambda Calculus Basics (University of Chicago)](https://www.classes.cs.uchicago.edu/archive/2002/winter/CS33600/slides/Lesson2.pdf)
+
 [Introduction to the Lambda Notation (Brilliant)](https://brilliant.org/wiki/lambda-calculus/#introduction-to-the-lambda-notation)
+
 [Overview of Java Lambda Expressions(OpenDSA)](https://opendsa.cs.vt.edu/ODSA/Books/PL/html/ChurchNumerals.html)
+
 [Programming with Math | The Lambda Calculus (Eyesomorphic)](https://www.youtube.com/watch?v=ViPNHMSUcog)
+
 [CSE 340 F16: 11-9-16 "Lambda Calculus Pt. 1" (Prof. Adam Doupe, Arizona State University)](https://www.youtube.com/watch?v=jI93GnqcsWw&list=PLBbCu3SnCcwKIgSozQQkxa6I7aNbKD0pz)
