@@ -124,13 +124,43 @@ The expression translates to “for the function `λx.x`, provide the function w
 However, `(λx.x) “hello world”` isn't a valid expression. As discussed previously, constants aren’t allowed in expressions (which is why I emphasise “similar-ish” when discussing function application in Racket, in Racket we can pass constants as arguments to a function). Again, this should highlight the fact that Lambda Calculus isn't just the lambda expression we've experience with in this course. 
 
 ### Beta Reduction
-In order to evaluate and application (in other words function application), it is done through a  process called Beta Reduction. Similar to function application in Racket, beta-reduction works by replacing every occurrence of the bound variable in the function body with the given argument, and then returning the resulting expression (output).
+In order to evaluate and application (in other words function application), it is done through a  process called beta reduction. Similar to function application in Racket, beta reduction works by replacing every occurrence of the bound variable in the function body with the given argument, and then returning the resulting expression (output).
 
 For instance if I have the expression `(λx.x) y`, applying beta reduction gives us the result `y`. We provide `y` as an argument to the function `(λx.x)`, replace each instance of `x` with `y`, and finally return the output of the expression.
 
 We typically denote beta-reduction using an arrow labeled with `β` ($\to_{\beta}$):
 
-Additionally when performing beta-reduction we use the follow notation to note we’re replacing variable x with expression e x [e/x].
+Additionally, performing beta reduction, the following notation is sometimes used to denote subtituion,  e[y/x]. This translates to "given the output expression e, return the expression e by replace every instance of x with y". 
+
+Before we move to examples of beta reduction, I would like to brush-up on what is a free variable and what's a bound variable in Lambda Calculus (you should be really familar with it by now from the closure and type inference lessons but we'll define it using Lambda Calculus syntax).
+
+Bound variable are variables that are restricted to a particular function's argument, otherwise they’re free. In lambda calculus, a variable x is free iff there exists an abstraction such that x is an input variable. 
+
+For instance, in the expression  `(λx.x) y`,  `x` is a bound variable as it’s used as input as a lambda function while `y` is a free variable, there doesn’t exist an abstraction that uses y as an input variable.
+
+Another example is  `(λx.x) (λy.y)`, both x and y are bound variables and they’re both tied to a lambda function.
+
+When performing beta reduction, its important the you only replace free variable and NOT bound variables, replacing bound variables is invalid beta reduction (hopefully this should be relatively intuitive, imagine replace an unintentional part of the function via your reduction, this would result in invalid lambda or unexpected behaviour).
+
+Now we're ready to perform some beta reduction :)!
+
+Applying beta reduction to `(λx.x) y` gives the following result
+
+`(λx.x) y` $\to_{\beta}$ `y`, it is equivalently written as `(λx.x) y` $\to_{\beta}$ `x [y/x]`
+
+Applying beta reduction to `(λx.x) (λy.y)` gives the following result
+
+`(λx.x) (λy.y)` $\to_{\beta}$ `(λy.y)`, it is equivalently written as `(λx.x) (λy.y)` $\to_{\beta}$ `x [(λy.y)/x]`
+
+Note while x is a bound variable for the expression `(λx.x)` when applying beta reduction, we look at the output expression we are subtituing to. In this case it's the variable `x`. Notice there no application associated to the variable `x` thus, performing `x [(λy.y)/x]` is a valid beta reduction.
+
+An invalid beta reduction is the lamnda expression `(λx.(λx.x)) y` and doing `(λx.(λx.x)) y`  $\to_{\beta}$ `(λx.x) [y/x]`, `x` in the output expression `(λx.x)` is bounded by an application.
+
+Now we’re ready to discuss what is Lambda Calculus?
+
+Lambda calculus is a programming language (developed by Alonzo Church in 1936) that consists of lambda expressions and substitutions. It is often described as “the smallest universal programming language,” meaning that any computation can be represented as an equivalent lambda expression. This idea is supported by the Church-Turing thesis, which states that any computation that can be expressed algorithmically can be modeled by a Turing machine (proposed by Alan Turing) which has an eqivalent representation in lambda calculus (developed by Alonzo Church).
+
+To motivate the Church-Turing thesis let’s tackle a challenge that you’ve noticed in the language, the lack of constants (ie. integers, strings, …).
 
 
 
