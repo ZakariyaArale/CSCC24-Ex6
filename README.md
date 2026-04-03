@@ -9,18 +9,17 @@ For instance if we consider the expression
 ```
 This is an function that take two values and return the sum. This is also a lambda expression, the expression doesn’t have a concrete name (like add_two_num) while specifying the arithmetic operation being applied to two inputted values.
 
-Additionally we can pass is as argument of functions such as in foldr.
-
+Additionally we can pass is as argument of functions such as in foldr,
+```bash
 sumList = foldr \x y -> x + y 0 
-
-Returned as a a result
+```
+returned as a a result
 ```bash
 Sum_two = \x y -> x  + y
 ```
-
 And stored in data structure 
 
-data Expression  = Func (a -> a -> a)
+data Expression  = Func (a -> a -> a) (please refer to **Sum.hs** for code)
 
 However a function 
 
