@@ -198,7 +198,7 @@ Three
 
 This numbering system of using the number of compositions of `f` to denote numerical values is called Church Numerals. 
 
-Using this model for representing numerical values, writing a lambda expression that computes natural number addition is intuitive, we simplify combine the number of function application of both arguments
+Using this model for representing numerical values, writing a lambda expression that computes natural number addition is intuitive, we simplify combine the number of function composition of `f` of both arguments
 
 This gives the lambda expression `Add_Nat : λa. λb. λf. λx. a f (b f x)`
 
