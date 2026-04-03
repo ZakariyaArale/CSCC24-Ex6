@@ -355,4 +355,4 @@ $\to$ (λx. λy. y) True False               [defn of False]
 
 $\to_{\beta}$ (λy. y) False                
 
--> beta False                          
+$\to_{\beta}$ False                          
