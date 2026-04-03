@@ -264,13 +264,14 @@ We’ll use the following convection to define what true and false is
 
 
 `True: λx. λy. x`
-(The output expression will be the first input variable )
+(The output expression will be the first input variable)
 
 `False: λx. λy. y`
 (The output expression will be the second input variable)
 
 
 Now that we have formally defined True and False in lambda calculus, let’s tackle the simplest Boolean operator in Boolean algebra: not.
+
 Intuitively, we want to invert a truth value. In other words, we want to flip whatever Boolean value we are given (ie. true becomes false and false becomes true). What we could do is pass false and true (lambda expression) to some truth value where the first argument is false and the second argument is true. Intuitively this should make sense, if our boolean expression is true, applying beta sub will give false (as true always outputs the first argument). 
 
 
