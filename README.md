@@ -22,7 +22,7 @@ sum_two_helper = \b -> \x y -> x + y
 sum_two :: Num a => a -> a -> a
 sum_two = sum_two_helper "hello world"
 ```
-(Sum_two is the result of the lambda expression that takes in no arguments and return our original lambda expression)
+(sum_two is the result of passing "hello world" to our helper function, its result is our original expression).
 and stored in data structures,
 ```bash
 data Expression a = Func (a -> a -> a) 
