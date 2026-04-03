@@ -158,10 +158,11 @@ An invalid beta reduction is the lamnda expression `(λx.(λx.x)) y` and doing `
 
 Now we’re ready to discuss what is Lambda Calculus?
 
-Lambda calculus is a programming language (developed by Alonzo Church in 1936) that consists of lambda expressions and substitutions. It is often described as “the smallest universal programming language,” meaning that any computation can be represented as an equivalent lambda expression. This idea is supported by the Church-Turing thesis, which states that any computation that can be expressed algorithmically can be modeled by a Turing machine (proposed by Alan Turing) which has an eqivalent representation in lambda calculus (developed by Alonzo Church).
+Lambda calculus is a programming language (developed by Alonzo Church in 1936) that consists of lambda expressions and substitutions. It is often described as “the smallest universal programming language,” meaning that any computation can be represented as an equivalent lambda expression. This idea is supported by the Church-Turing thesis, which states that any computation that can be expressed algorithmically can be modeled by a Turing machine which has an eqivalent representation in lambda calculus.
 
 To motivate the Church-Turing thesis let’s tackle a challenge that you’ve noticed in the language, the lack of constants (ie. integers, strings, …).
 
+## Fun with Lambda Expressions
 
 
 
