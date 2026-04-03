@@ -317,7 +317,7 @@ evalues to true, instead of raising a ZeroDivision Exception
 However, if the first argument is false, then we evaluate the next argument and its truth value.
 This is why 
 ```bash
-true or 1 / 0 == 0
+false or 1 / 0 == 0
 ```
 raises a ZeroDivision Exception.
 (Python is basically saying “I’ve found a False, the truth value of the boolean expression solely depends on the truth value of the second argument, I’m going to start evaluating the next expression”)
