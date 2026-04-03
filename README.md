@@ -19,7 +19,7 @@ returned as a result,
 Sum_two : Num a => a -> a -> a 
 Sum_two = \() -> \x y -> x + y
 ```
-(Sum_two is the result of the lambda expression that takes in no arguments and return our original lmanda expression)
+(Sum_two is the result of the lambda expression that takes in no arguments and return our original lambda expression)
 and stored in data structures,
 ```bash
 data Expression a = Func (a -> a -> a) 
