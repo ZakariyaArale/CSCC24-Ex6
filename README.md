@@ -156,6 +156,8 @@ Note while x is a bound variable for the expression `(λx.x)` when applying beta
 
 An invalid beta reduction is the lamnda expression `(λx.(λx.x)) y` and doing `(λx.(λx.x)) y`  $\to_{\beta}$ `(λx.x) [y/x]`, `x` in the output expression `(λx.x)` is bounded by an application.
 
+### Definition of Lambda Calculus
+
 Now we’re ready to discuss what is Lambda Calculus?
 
 Lambda calculus is a programming language (developed by Alonzo Church in 1936) that consists of lambda expressions and substitutions. It is often described as “the smallest universal programming language,” meaning that any computation can be represented as an equivalent lambda expression. This idea is supported by the Church-Turing thesis, which states that any computation that can be expressed algorithmically can be modeled by a Turing machine which has an eqivalent representation in lambda calculus.
