@@ -72,7 +72,7 @@ For instance if I have the symbol x, without any “context” we don’t know w
 
 On the flip side, constants like the integer `1` or the string `“hello world”` aren't variables. The value of both constants is fixed and can’t be changed. 
 
-## Abstractions
+### Abstractions
 An abstraction represents a function in Lambda Calculus
 
 Recall from MATA31, a function defines a mapping from a set of input values to the set of output values where each input value maps to exactly one output value.
