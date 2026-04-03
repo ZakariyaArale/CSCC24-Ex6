@@ -231,6 +231,27 @@ $\to_{\beta}$  (λf. λx. x),
 $\to$  0 [defn 0] , as wanted
 
 
+Lets verify a slightly more challenging function application by testing Add with 1 and 2, which we expect to output 3 (again we'll use 1, 2, 3 as placeholder for the corresponding numerals). I'll leave the alternative beta reduction notation representation as an exercise.
+
+((λa. λb. λf. λx. a f (b f x)) 1 2)
+
+$\to_{\beta}$  ((λb. λf. λx. 1 f (b f x)) 2)        
+
+$\to_{\beta}$  (λf. λx. 1 f (2 f x))               
+
+$\to$  (λf. λx. (λf. λx. f x) f (2 f x))        [defn of 1]
+
+$\to_{\beta}$ (λf. λx. (λx. f x) (2 f x))          
+
+$\to_{\beta}$  (λf. λx. f (2 f x))                  
+
+$\to$  (λf. λx. f ((λf. λx. f (f x)) f x))      [defn of 2]
+
+$\to_{\beta}$  (λf. λx. f ((λx. f (f x)) x))        
+
+$\to_{\beta}$ (λf. λx. f (f (f x)))                
+
+$\to$ 3 [defn of 3], as wanted
 
 
 
