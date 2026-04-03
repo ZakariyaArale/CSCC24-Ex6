@@ -81,12 +81,12 @@ For example, the relation $f(x) = x^5 + 1$ where $f : \mathbb{R} \to \mathbb{R}$
 However, the relation $g(x) = \pm \sqrt{x}$  where $g : \mathbb{R}_{\ge 0} \to \mathbb{R}$ isn’t a function. If I consider the value $x = 1$, $g(1)$ maps to both $-1$ and $1$ (not all elements in the domain map to a unique element of the codomain). 
 
 An abstraction consists of 4 components: 
-A lambda symbol to represent that the expression is a function
-An input variable
-An output expression
-A dot to separate the input variable and the output expression (it represent equality of the function to the output expression)
+- A lambda symbol to represent that the expression is a function
+- An input variable
+- An output expression
+- A dot to separate the input variable and the output expression (it represent equality of the function to the output expression)
 Symbolically abstractions are of the form
-\lambda x . e where x is a variable and e is an expression
+- `λx.e` where `x` is a variable and `e` is an expression
 
 For instance, if we consider \lambda x . x, it is a function as it maps the value (the x is a placeholder of) to itself. Additionally the function is of the form \lambda x . e. Therefore, \lambda x . x is an expression more specifically its an abstraction.
 
