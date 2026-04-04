@@ -31,7 +31,9 @@ sum_two' :: Num a => Expression a
 sum_two' = Func(\x y -> x + y)
 ```
 showing that the sum expression is a first class value.
+
 (please refer to **Sum.hs** for code)
+
 However functions that provide a name for its computation such as 
 ```bash
 def sum_two(x, y):
