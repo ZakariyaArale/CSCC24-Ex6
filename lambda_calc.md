@@ -366,7 +366,7 @@ $\to_{\beta}$ (λy. y) False
 
 $\to_{\beta}$ False                          
 
-Note that in CSCB36, one of the big results (no pun intended) is that the set {not, or} is complete in Boolean algebra. In other words, since we’ve defined the not operator and the or operator as equivalent lambda expressions, we can represent any Boolean expression as an equivalent lambda calculus expression using combinations of not and or.
+Note that in CSCB36, one of the big results (no pun intended) you covered is that the set {not, or} is complete in Boolean algebra. In other words, since we’ve defined the not operator and the or operator as equivalent lambda expressions, we can represent any Boolean expression as an equivalent lambda calculus expression using combinations of not and or.
 
 ## Conclusion 
 To wrap up this lecture on Lambda Calculus, I want to conclude this lecture by talking about the importance of Lambda Calculus for CS students. While this lecture focuses on what lambda calculus is, it is equally important to understand why you should learn lambda calculus.
