@@ -106,11 +106,11 @@ As a refresher this is the identity function in Racket
 
 However, if we consider `λx.1`, while the statement represents a function as it maps the value (the x is a placeholder of) to the constant value 1, the constant 1 isn’t a valid expression (note that constants aren’t defined in the definition of expressions). Thus the function `λx.1` isn’t an expression. This is interesting as we can do this for lambda expression we've learned in this course. As an example in Rxcket we can do
 ```bash
-(define identity' (λ (x) 1))
+(define one' (λ (x) 1))
 
 ;In each example, the return value is 1
-(identity' 9)
-(identity' '(C . 24))
+(one' 9)
+(one' '(C . 24))
 ```
 (please refer to **one.rk** for code)
 This should highlight the fact that Lambda Calculus isn't just the lambda expression we've experience with in this course. 
