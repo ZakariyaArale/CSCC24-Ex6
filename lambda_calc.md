@@ -316,6 +316,7 @@ This is why
 true or 1 / 0 == 0
 ```
 evalues to true, instead of raising a ZeroDivision Exception
+
 (Python is basically saying “I’ve found a True, anything or to True must evaluate to truth so I’m going to stop evaluating the rest of the expression”)
 
 However, if the first argument is false, then we evaluate the next argument and its truth value.
@@ -324,7 +325,10 @@ This is why
 false or 1 / 0 == 0
 ```
 raises a ZeroDivision Exception.
+
 (Python is basically saying “I’ve found a False, the truth value of the boolean expression solely depends on the truth value of the second argument, I’m going to start evaluating the next expression”)
+
+(please refer to **short_circuit.py** for code)
 
 So we need two lambda expressions, say p and q, we’ll pass the expression p with arguments True and q. If p is true then we automatically output the first argument which is True. If p is false we output whatever the truth value of q is (see how it's really similar to short circuit evaluation).
 Thus we can formally define or as 
