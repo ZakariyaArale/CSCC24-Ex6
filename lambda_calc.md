@@ -182,6 +182,8 @@ s(s(zero))
 % two
 s(s(s(zero)))
 ```
+(please refer to your **Lab9.pl** submission for a quick refresher)
+
 Using the definition of a lambda expression, this simply translates to the number of applications of f to a variable x, in other words …
 
 Zero
@@ -233,7 +235,7 @@ $\to_{\beta}$  (λf. λx. x),
 $\to$  0 [defn 0] , as wanted
 
 
-Lets verify a slightly more challenging function application by testing Add with 1 and 2, which we expect to output 3 (again we'll use 1, 2, 3 as placeholder for the corresponding numerals). I'll leave the alternative beta reduction notation representation as an exercise.
+Lets verify a slightly more challenging function application by testing Add with 1 and 2, which we expect to output 3 (again we'll use 1, 2, 3 as placeholder for the corresponding numerals). I'll leave the alternative beta reduction notation representation for the rest of the lesson as an exercise.
 
 ((λa. λb. λf. λx. a f (b f x)) 1 2)
 
