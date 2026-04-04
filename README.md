@@ -30,3 +30,11 @@ and the output would follow once you press enter
 This should be a very straightforward to use however ensure that you're using Python interperter (version 3+) to run the program. 
 
 Examples one how to use the program and the expected output have been commented it, to rum them simply remove the print comments
+
+## identity.rkt and one.rkt
+Again both of these programs are very straightforward, ensure that you have Dr Racket installed (version 8.11 +) 
+
+To run the indentity program, simiply provide any valid data type as an argument to the identity_ function, you should see the same value being outputted.
+Similarly, run the one program, simiply provide any valid data type as an argument to the one_ function, you should see the value `1` being outputted.
+
+As always, examples one how to run the code have been commented, simply remove the comments to run the examples.
