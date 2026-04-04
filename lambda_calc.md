@@ -143,7 +143,7 @@ For instance, in the expression  `(λx.x) y`,  `x` is a bound variable as it’s
 
 Another example is  `(λx.x) (λy.y)`, both x and y are bound variables and they’re both tied to a lambda function.
 
-When performing beta reduction, its important the you only replace free variable and NOT bound variables, replacing bound variables is invalid beta reduction (hopefully this should be relatively intuitive, imagine replace an unintentional part of the function via your reduction, this would result in invalid lambda or unexpected behaviour).
+When performing beta reduction, its important the you only replace free variable and NOT bound variables, replacing bound variables is invalid beta reduction (hopefully this should be relatively intuitive, imagine replace an unintentional part of the function via your reduction, this would result in an invalid lambda expression or unexpected behaviour).
 
 Now we're ready to perform some beta reduction :)!
 
