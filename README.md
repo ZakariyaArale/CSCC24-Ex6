@@ -38,3 +38,9 @@ To run the indentity program, simiply provide any valid data type as an argument
 Similarly, run the one program, simiply provide any valid data type as an argument to the one_ function, you should see the value `1` being outputted.
 
 As always, examples one how to run the code have been commented, simply remove the comments to run the examples.
+
+## short_circuit
+Once again very straightforward program, like `sum.py` ensure that you're using Python interperter (version 3+) to run the program. 
+
+To highlight the effect of short circuiting, uncomment the first comment `print(true or 1/0 == 0)` you will see it output true.
+After, put the comment back on the  `print(true or 1/0 == 0)` and uncomment the second comment `print(false or 1/0 == 0)`, you'll see that a ZeroDivision Error is thrown.
