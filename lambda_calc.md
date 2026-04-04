@@ -157,7 +157,7 @@ Applying beta reduction to `(λx.x) (λy.y)` gives the following result
 
 Note while x is a bound variable for the expression `(λx.x)` when applying beta reduction, we look at the output expression we are subtituing to. In this case it's the variable `x`. Notice there no abstraction associated to the variable `x` thus, performing `x [(λy.y)/x]` is a valid beta reduction.
 
-An invalid beta reduction is the lamnda expression `(λx.(λx.x)) y` and doing `(λx.(λx.x)) y`  $\to_{\beta}$ `(λx.x) [y/x]`, `x` in the output expression `(λx.x)` is bounded by an application.
+An invalid beta reduction is the lambda expression `(λx.(λx.x)) y` and doing `(λx.(λx.x)) y`  $\to_{\beta}$ `(λx.x) [y/x]`, `x` in the output expression `(λx.x)` is bounded by an abstraction.
 
 ### Definition of Lambda Calculus
 
