@@ -12,7 +12,7 @@ This is an function that take two values and return the sum. This is also a lamb
 Additionally we can pass is as an argument for functions such as in foldr,
 ```bash
 sumList :: Num a => [a] -> a
-sumList = foldr \x y -> x + y 0 
+sumList = foldr (\x y -> x + y) 0 
 ```
 returned as a result,
 ```bash
