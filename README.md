@@ -43,4 +43,4 @@ As always, examples one how to run the code have been commented, simply remove t
 Once again very straightforward program, like `sum.py` ensure that you're using Python interperter (version 3+) to run the program. 
 
 To highlight the effect of short circuiting, uncomment the first comment `print(true or 1/0 == 0)` you will see it output true.
-After, put the comment back on the  `print(true or 1/0 == 0)` and uncomment the second comment `print(false or 1/0 == 0)`, you'll see that a ZeroDivision Error is thrown.
+After, put the comment back on the  `print(true or 1/0 == 0)` and uncomment the second comment `print(false or 1/0 == 0)`, you'll see that a ZeroDivision Error is raised.
