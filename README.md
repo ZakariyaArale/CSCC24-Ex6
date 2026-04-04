@@ -26,3 +26,5 @@ and the output would follow once you press enter
 ```bash
 0
 ```
+## sum.py
+This should be a very straightforward to use however ensure that you're using Python interperter (version 3+) to run the program, examples one how to use the program and the expected output have been commented it, to rum them simply remove the print comments
