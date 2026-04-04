@@ -40,6 +40,7 @@ def sum_two(x, y):
     return x + y
 ```
 in Python isn't a lambda expression as we are providing an explict name to the function via the def keyword.
+
 (please refer to **sum.py** for code)
 
 While lambda expressions were an enjoyable topic to learn about in this course, allowing us to express complex algorithms in just a few lines of code (such as in Lab 3, where we computed the transpose of a matrix in a single line of code, or used function composition to optimize stack space in the CPS lecuture), if you’re like me, you may have noticed that we never developed a formal understanding of what really is Lambda Calculus. If I were to ask a C24 student what Lambda Calculus is, they might say something like “it’s a terminology that describes lambda expressions.” While lambda expressions are an important part of Lambda Calculus, as we will see in this lecture, this explanation only gives a “loose” view of the subject.
