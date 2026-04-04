@@ -1,3 +1,4 @@
+(Github: https://github.com/ZakariyaArale/CSCC24-Ex6)
 # Running Code
 ## Sum.hs
 - Ensure that you have GHCI installed in your terminal (version 9+)
