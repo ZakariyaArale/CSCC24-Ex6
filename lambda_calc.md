@@ -96,11 +96,11 @@ For instance, if we consider `λx.x`, it is a function as it maps the value (the
 This function should look very familiar. Beside the difference in syntax, this is exactly how we’ve defined the identity function in Racket in the CPS lecture.
 As a refresher this is the identity function in Racket
 ```bash
-(define identity' (λ (x) (x)))
+(define identity_ (λ (x) x))
 
 ;In each example, the return value is the inputted value
-(identity' 9)
-(identity' '(C . 24))
+(identity_ 9)
+(identity_ '(C . 24))
 ```
 (please refer to **identity.rk** for code)
 
