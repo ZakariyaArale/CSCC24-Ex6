@@ -277,7 +277,7 @@ We’ll use the following convection to define what true and false is
 
 Now that we have formally defined True and False in lambda calculus, let’s tackle the simplest Boolean operator in Boolean algebra: not.
 
-Intuitively, we want to invert a truth value. In other words, we want to flip whatever Boolean value we are given (ie. true becomes false and false becomes true). What we could do is pass false and true (lambda expression) to some truth value where the first argument is false and the second argument is true. Intuitively this should make sense, if our boolean expression is true, applying beta sub will give false (as true always outputs the first argument). 
+Intuitively, we want to invert a truth value. In other words, we want to flip whatever Boolean value we are given (ie. true becomes false and false becomes true). What we could do is pass false and true (lambda expression) to some truth value where the first argument is false and the second argument is true. Intuitively this should make sense, if our boolean expression is true, applying beta reduction will give false (as true always outputs the first argument). 
 
 In a more syntactical approach
 
@@ -289,7 +289,7 @@ $\to_{\beta}$ (λy. False) True
 
 $\to_{\beta}$ False 
 
-Additionally, if our boolean expression is false, applying beta sub will give true (as true always outputs the second argument). 
+Additionally, if our boolean expression is false, applying beta reduction will give true (as true always outputs the second argument). 
 In a more syntactical approach
 
 False False True
@@ -308,7 +308,7 @@ Using this relationship of passing False and True as arguments to a boolean lamb
 Now lets move to a more challenging boolean operator: or
 
 We want a boolean expression that outputs true if any of the lambda expressions we give to the lambda function is True, otherwise we should output false.
-To do this, we’ll take interspiration from short circuit evaluation of the or operator in python. 
+To do this, we’ll take inspiration from short circuit evaluation of the or operator in python. 
 
 Recall that if the first argument is True, True is automatically returned, regardless of what the second argument evaluates to.
 This is why 
